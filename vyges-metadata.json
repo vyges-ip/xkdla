@@ -1,0 +1,108 @@
+{
+  "$schema": "https://vyges.com/schema/v1/vyges-metadata.schema.json",
+  "x-version": "1.0.0",
+  "name": "xkdla",
+  "version": "0.1.0",
+  "description": "Open-source deep-learning accelerator (DLA): a PE-array convolution/inference engine with on-chip feature, parameter, and output-line buffers and a control engine. Verilog RTL from OpenASIC (Fudan VIP lab). Mirror of openasic-org/xkDLA.",
+  "license": "MIT",
+  "maturity": "prototype",
+  "target": [
+    "asic",
+    "fpga"
+  ],
+  "design_type": [
+    "digital"
+  ],
+  "created": "2026-06-19T04:42:15Z",
+  "updated": "2026-06-19T04:42:15Z",
+  "source": {
+    "type": "git",
+    "url": "https://github.com/openasic-org/xkDLA",
+    "commit": "bed44c45b0e9e4f0049bfef0bcc29a04522ca584",
+    "ip_path": ".",
+    "private": false,
+    "containsEncryptedPayload": false,
+    "indexing": true
+  },
+  "maintainers": [
+    {
+      "name": "openasic-org",
+      "url": "https://github.com/openasic-org",
+      "github": "openasic-org"
+    },
+    {
+      "name": "Vyges",
+      "email": "team@vyges.com",
+      "url": "https://vyges.com",
+      "github": "vyges"
+    }
+  ],
+  "interfaces": [
+    {
+      "type": "clock",
+      "name": "clock",
+      "signals": [
+        {
+          "name": "clk",
+          "direction": "input",
+          "type": "clock",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "type": "reset",
+      "name": "reset",
+      "signals": [
+        {
+          "name": "rst_n",
+          "direction": "input",
+          "type": "reset",
+          "width": 1,
+          "active_level": "low"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "main_category": "Processing Cores",
+      "sub_category": "Deep Learning Accelerator"
+    }
+  ],
+  "keywords": [
+    "dla",
+    "deep-learning",
+    "accelerator",
+    "npu",
+    "cnn",
+    "inference",
+    "pe-array",
+    "ai"
+  ],
+  "branding": {
+    "provider": "OpenASIC",
+    "display_name": "xkdla"
+  },
+  "test": {
+    "status": "pending",
+    "coverage": "none"
+  },
+  "trust": {
+    "verification_level": "unverified",
+    "tapeout_count": 0,
+    "fpga_validated": false,
+    "maintained": true,
+    "last_activity": "2026-06-19T04:42:15Z"
+  },
+  "meta": {
+    "template": {
+      "generator": "onboard_ip.py",
+      "template_version": "1.0.0",
+      "generated_at": "2026-06-19T04:42:15Z"
+    },
+    "schema": {
+      "version": "1.0.0"
+    }
+  }
+}

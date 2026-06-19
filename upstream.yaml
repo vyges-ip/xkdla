@@ -1,0 +1,19 @@
+schema_version: "vyges-upstream-v1"
+upstream:
+  type: "standalone"
+  repo: https://github.com/openasic-org/xkDLA
+  branch: main
+  commit: bed44c45b0e9e4f0049bfef0bcc29a04522ca584
+  extracted_at: "2026-06-19T04:42:15Z"
+import:
+  rtl:
+    - path: "rtl"
+      map_to: "rtl"
+  license:
+    - path: "LICENSE"
+  readme:
+    - path: "README.md"
+license:
+  spdx: MIT
+  file: LICENSE
+metadata_locked: true
